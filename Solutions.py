@@ -41,3 +41,48 @@ while iteration * iteration < largenumber:
 
 print(largenumber)
 
+"""4. A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+Find the largest palindrome made from the product of two 3-digit numbers."""
+#sequencename[::-1] to reverse a sequence
+def reverse(string):
+    return string[::-1]
+
+def palindrome(string):
+    string=str(string)
+    list=[]
+    for character in string:
+        list.append(character)
+    if len(string)%2==0 and len(string) != 0:
+        indexposition=int(len(string)/2)
+        if list[:indexposition]==reverse(list[indexposition:]):
+            return True
+    elif len(string)%2!=0 or len(string) == 0:
+        return False
+#Works as a palindrome boolean
+
+#Have to make a reverse and palindrome function boolean first
+firstlist=[]
+secondlist=[]
+products=[]
+palindromes=[]
+first=999
+second=999
+largest=first*second
+
+while first!=100:
+    firstlist.append(first)
+    first-=1
+while second!=100:
+    secondlist.append(second)
+    second-=1
+
+for i in firstlist:
+    for j in secondlist:
+        result=i*j
+        products.append(result)
+for product in products:
+    if palindrome(product)==True:
+        palindromes.append(product)
+
+print(max(palindromes))
