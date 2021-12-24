@@ -109,3 +109,16 @@ print(lcm(*range(1, 21)))
 #        possibility_list.append(possibility)
 #print(max(possibility_list))
 #Former Tried Solution, found an easier method through python manual
+
+
+"""6. Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum."""
+total=0
+sum=0
+for number in range(1, 101):
+    number**=2
+    total+=number
+    #This is the sum of the squares of the numbers
+for number2 in range(1,101):
+    sum+=number2
+sum**=2 #square of the sum
+print(abs(total-sum))
