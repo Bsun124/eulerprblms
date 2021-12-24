@@ -86,3 +86,26 @@ for product in products:
         palindromes.append(product)
 
 print(max(palindromes))
+
+
+"""5. 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?"""
+from math import lcm
+
+print(lcm(*range(1, 21)))
+#Answer is 232792560, done with python version 3.10 on IDLE
+
+#list=[]
+#possibility_list=[]
+#base=1
+#numberlist=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+#for number in numberlist:
+#    for iteration in range(500): 
+#        list.append(iteration*number)
+#for possibility in list:
+#    if list.count(possibility)==20:
+#        print("Found LCM of [1:21] -->", str(possibility))
+#        possibility_list.append(possibility)
+#print(max(possibility_list))
+#Former Tried Solution, found an easier method through python manual
