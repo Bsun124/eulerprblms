@@ -122,3 +122,23 @@ for number2 in range(1,101):
     sum+=number2
 sum**=2 #square of the sum
 print(abs(total-sum))
+
+
+
+"""7. By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+What is the 10 001st prime number?"""
+countprime=0
+n=2
+def prime(number):
+    for factors in range(2, number):
+        if number%factors==0:
+            return False
+            break
+    return True
+
+while countprime!=10001:
+    if prime(n)==True:
+        countprime+=1
+    n+=1
+print(n-1)
