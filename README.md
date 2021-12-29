@@ -8,3 +8,4 @@ December 23th: 12:12 PM - 3:00 PM
 December 24th: 12:00 PM - 12:50 PM
 December 25th: 12:00 PM - 12:57 PM
 December 27th: 4:00 PM - 7:00 PM
+December 29th: 9:00 AM - 12:00 PM
